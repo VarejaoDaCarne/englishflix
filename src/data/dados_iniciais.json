@@ -1,183 +1,217 @@
 {
   "categorias": [
     {
-      "titulo": "Front End",
-      "link": "https://www.alura.com.br/formacao-front-end",
+      "titulo": "Iniciantes",
+      "link": "https://www.ccaa.com.br/ingles-para-iniciantes/",
       "cor": "#6BD1FF",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "Para quem está iniciando com Inglês",
+        "url": "https://www.ccaa.com.br/ingles-para-iniciantes/"
       },
       "videos": [
         {
-          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+          "titulo": "Como eu aprendi Inglês? E entendendo padrões!",
+          "url": "https://www.youtube.com/watch?v=OkboNGQ9LU0"
         },
         {
-          "titulo": "SEO com React",
-          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+          "titulo": "DICAS DE INGLÊS PARA INICIANTES, INTERMEDIÁRIOS E AVANÇADOS",
+          "url": "https://www.youtube.com/watch?v=Rn_bDRpwdp8"
         },
         {
-          "titulo": "Componentização com VanillaJS #AluraMais",
-          "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+          "titulo": "8 dicas para aprender inglês mais rápidos",
+          "url": "https://www.youtube.com/watch?v=IJE56Uuu-_o"
         },
         {
-          "titulo": "Pare de chutar e aprenda a display: inline #01",
-          "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+          "titulo": "Aulas de ingles Para Iniciantes",
+          "url": "https://www.youtube.com/watch?v=QsxYPwgH-lI"
         },
         {
-          "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-          "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+          "titulo": "Quais textos são ideais para iniciantes no inglês? | Mairo Vergara",
+          "url": "https://www.youtube.com/watch?v=_HFZVTkf8f0"
         },
         {
-          "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
-        },
-        {
-          "titulo": "Novidades do Angular v9",
-          "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
-        },
-        {
-          "titulo": "Base para aprender os frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
-        }        
+          "titulo": "Aprender inglês | Por onde começar?",
+          "url": "https://www.youtube.com/watch?v=d4T5YgwKzJo"
+        }
       ]
     },
     {
-      "titulo": "Back End",
+      "titulo": "Intermediário",
       "cor": "#00C86F",
       "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
+        "text": "Para quem está no nível intermediário do Inglês",
+        "url": "https://www.wizard.com.br/idiomas/ingles-intermediario/"
       },
       "videos": [
         {
-          "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-          "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+          "titulo": "Teste de Inglês Intermediário: Consegue Acertar?",
+          "url": "https://www.youtube.com/watch?v=C1f7tdbb-f4"
         },
         {
-          "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-          "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+          "titulo": "Como passar do intermediário para o avançado - SEGREDO! - Dica de Inglês 2018",
+          "url": "https://www.youtube.com/watch?v=YmhU17Ejct4"
         },
         {
-          "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-          "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+          "titulo": "Como sair do nível intermediário no inglês? | Mairo Vergara",
+          "url": "https://www.youtube.com/watch?v=MtqSaZrgC-c"
         },
         {
-          "titulo": "API: Dicionário do Programador",
-          "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
+          "titulo": "Saia do Intermediário: Como melhorar seu inglês no trabalho",
+          "url": "https://www.youtube.com/watch?v=WcdMQzZctOo"
         }, 
         {
-          "titulo": "Usando Git Direito",
-          "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+          "titulo": "SAINDO DO MALDITO NÍVEL INTERMEDIÁRIO NO INGLÊS",
+          "url": "https://www.youtube.com/watch?v=-lUf3AMWBXY"
         }
       ]
     },
     {
-      "titulo": "Data Science e Inteligência Artificial",
-      "cor": "#9cd33b",
+      "titulo": "Avançado",
+      "cor": "#ff0000",
       "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/formacao-data-science"
+        "text": "Para quem está no nível avançado do Inglês ",
+        "url": "https://certificadocursosonline.com/cursos/curso-de-ingles-avancado-i/"
       },
       "videos": [
         {
-          "titulo": "Teste de Turing",
-          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+          "titulo": "Dica de inglês avançado | Advanced English tip",
+          "url": "https://www.youtube.com/watch?v=vnNloWou1g4"
         },
         {
-          "titulo": "O que é Data Science?",
-          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+          "titulo": "Como aumentar vocabulário em inglês avançado - Dica de inglês grátis nível avançado",
+          "url": "https://www.youtube.com/watch?v=vy-EXoCdiA4"
         },
         {
-          "titulo": "Melhor forma de aprender Python",
-          "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+          "titulo": "Seu Inglês Estagnou no Nível Avançado? | Mairo Vergara",
+          "url": "https://www.youtube.com/watch?v=yJygcOi2w7c"
         },
         {
-          "titulo": "Como ingressar no mercado de Data Science?",
-          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+          "titulo": "CANAIS PARA INGLÊS AVANÇADO | com legenda em inglês",
+          "url": "https://www.youtube.com/watch?v=KeNl5-RYOO4"
+        },
+        {
+          "titulo": "5 dicas que vão melhorar MUITO o seu inglês",
+          "url": "https://www.youtube.com/watch?v=p5QncQhAkNQ"
         }
       ]
     },
     {
-      "titulo": "Filmes",
+      "titulo": "Leitura",
       "cor": "orange",
-      "videos": [
-        {
-          "titulo": "Interestellar",
-          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
-        },
-        {
-          "titulo": "Gattaca",
-          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
-        },
-        {
-          "titulo": "A Chegada",
-          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
-        },
-        {
-          "titulo": "Feitiço do Tempo",
-          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
-        }
-      ]
-    },
-    {
-      "titulo": "Games",
-      "cor": "red",
       "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/formacao-jogos-unity"
+        "text": "Aprimore sua leitura em Inglês",
+        "url": "https://www.uptime.com.br/blog/aprendendo-ingles-dicas-para-treinar-o-reading"
       },
       "videos": [
         {
-          "titulo": "Final Fantasy 7",
-          "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+          "titulo": "Saiba como praticar o READING sozinho! 7 DICAS!",
+          "url": "https://www.youtube.com/watch?v=bnuM6wwjswk"
         },
         {
-          "titulo": "Assassins Creed Valhalla",
-          "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+          "titulo": "Dicas para melhorar a leitura em inglês - Estratégias",
+          "url": "https://www.youtube.com/watch?v=wT6S1kebp7I"
         },
         {
-          "titulo": "God of War 4",
-          "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+          "titulo": "Como melhorar seu reading - Turbine agora seu inglês",
+          "url": "https://www.youtube.com/watch?v=gNR11oWUtG0"
         },
         {
-          "titulo": "Resident Evil 8",
-          "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+          "titulo": "5 Estratégias Poderosas pra Melhorar o Reading em Inglês",
+          "url": "https://www.youtube.com/watch?v=uSLhKaQF5HY"
         },
         {
-          "titulo": "Pokémon Let's Go Pikachu/Eevee",
-          "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+          "titulo": "4 dicas para READING nos testes de proficiência (TOEFL, IELTS, etc)",
+          "url": "https://www.youtube.com/watch?v=5BDxWRNsvqc"
         }
       ]
     },
     {
-      "titulo": "Aprendendo a aprender tecnologia",
+      "titulo": "Escrita",
+      "cor": "grey",
+      "link_extra": {
+        "text": "Aprimore sua escrita em Inglês",
+        "url": "https://www.wizard.com.br/idiomas/como-escrever-em-ingles-dicas-para-melhorar-a-escrita/"
+      },
+      "videos": [
+        {
+          "titulo": "Como melhorar o writing - Vamos escrever em inglês",
+          "url": "https://www.youtube.com/watch?v=WilmJzuOmjg"
+        },
+        {
+          "titulo": "Como Melhorar A Escrita Em Inglês",
+          "url": "https://www.youtube.com/watch?v=qn2jU56QdSI"
+        },
+        {
+          "titulo": "5 formas de melhorar seu writing! - Aula de Inglês #80",
+          "url": "https://www.youtube.com/watch?v=5DcJ_D_7j0g"
+        },
+        {
+          "titulo": "4 Dicas Para Melhorar seu WRITING | Aula do Inglês Feito Fácil - IFF",
+          "url": "https://www.youtube.com/watch?v=P0x1oPZPcAI"
+        },
+        {
+          "titulo": "4 TÁTICAS MATADORAS para praticar seu WRITING sozinho!",
+          "url": "https://www.youtube.com/watch?v=fCSEIMw2zIQ"
+        }  
+      ]
+    },
+    {
+      "titulo": "Escuta",
       "cor": "#6b5be2",
       "link_extra": {
-        "text": "Curso sobre aprendizado na Alura",
-        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
+        "text": "Aprimore sua escuta em Inglês",
+        "url": "https://www.inglesnapontadalingua.com.br/2013/06/dicas-para-melhorar-o-listening-em-ingles.html"
       },
       "videos": [
         {
-          "titulo": "Como estudar melhor?",
-          "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
+          "titulo": "4 dicas para treinar o seu listening no inglês | Mairo Vergara | Parte 10 de 365",
+          "url": "https://www.youtube.com/watch?v=oEwDLHNj9ok"
         },
         {
-          "titulo": "Faculdade",
-          "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
+          "titulo": "Como Melhorar O Listening RÁPIDO?! - 5 Erros Ao Praticar O Listening",
+          "url": "https://www.youtube.com/watch?v=VH5KEnloWlI"
         },
         {
-          "titulo": "Frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+          "titulo": "COMO MELHORAR O LISTENING EM INGLÊS?",
+          "url": "https://www.youtube.com/watch?v=jeyK0jAfgfo"
         },
         {
-          "titulo": "A mágica do Aprendizado",
-          "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
+          "titulo": "Sites para praticar o listening em inglês - Série Listening - Vídeo #3",
+          "url": "https://www.youtube.com/watch?v=0e8T1j-ONJw"
         },
         {
-          "titulo": "Como aprender a programar?",
-          "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+          "titulo": "Como Treinar Seu Listening em Inglês",
+          "url": "https://www.youtube.com/watch?v=too1TW3zBlE"
+        }
+      ]
+    },
+    {
+      "titulo": "Pronúncia",
+      "cor": "#B5CB00",
+      "link_extra": {
+        "text": "Aprimore sua pronúncia em Inglês",
+        "url": "https://englishlive.ef.com/pt-br/blog/como-melhorar-sua-pronuncia-em-ingles/"
+      },
+      "videos": [
+        {
+          "titulo": "DICAS DE PRONÚNCIA EM INGLÊS - 03 - SEMANA DA PRONÚNCIA - AULA MAIS TOP!!!",
+          "url": "https://www.youtube.com/watch?v=otiPUiqOwaw"
+        },
+        {
+          "titulo": "Dicas de pronúncia em inglês - R, H, E e Y - E-Dublin Class#15",
+          "url": "https://www.youtube.com/watch?v=ntSsOHYa5Ms"
+        },
+        {
+          "titulo": "COMO MELHORAR SUA PRONÚNCIA NO INGLÊS?",
+          "url": "https://www.youtube.com/watch?v=1D2hZhRXftY"
+        },
+        {
+          "titulo": "FALE COMO UM NATIVO - SUPER DICA DE INGLÊS - PRONÚNCIA",
+          "url": "https://www.youtube.com/watch?v=3_MIas1deFk"
+        },
+        {
+          "titulo": "Melhore Sua Pronúncia em Inglês em Apenas 16 Minutos",
+          "url": "https://www.youtube.com/watch?v=k1MWWhwuIp8"
         }
       ]
     }
