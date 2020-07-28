@@ -1,0 +1,14 @@
+.title-not-found, 
+.subtitle-not-found, 
+p{
+ text-align: center;
+}
+
+.iframe {
+    display: flex;
+    margin: 0 auto;
+    height: 475px;
+    width: 345px;
+    border: none;
+    overflow: hidden;
+}

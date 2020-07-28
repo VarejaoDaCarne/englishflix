@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function CadastroCategoria() {
     return (
-      <div>
+      <>
         <PageDefault>
             <h1>Cadastro de Categoria</h1>
 
@@ -25,7 +25,7 @@ function CadastroCategoria() {
               Ir para home
             </Link>
         </PageDefault>
-      </div>
+      </>
     )
 }
 
