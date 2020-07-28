@@ -34,12 +34,32 @@ body {
     .Menu {
         height: 40px;
         justify-content: center;
+    }
+    body {
+        --bodyPaddingTop: 40px;
+        padding-top: var(--bodyPaddingTop);
+    }
 }
 
-body {
-    --bodyPaddingTop: 40px;
-    padding-top: var(--bodyPaddingTop);
-    }
+.ButtonLink {
+    color: var(--white);
+    border: 1px solid var(--white);
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 16px 24px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: opacity .3s;
+}
+
+.ButtonLink:hover,
+.ButtonLink:focus {
+    opacity: .5;
 }
 
 @media (max-width: 800px) {
@@ -48,7 +68,7 @@ a.ButtonLink {
         left: 0;
         right: 0;
         bottom: 0;
-        background: var(--primary);
+        background: white;
         border-radius: 0;
         border: 0;
         text-align: center;
