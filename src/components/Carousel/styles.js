@@ -7,8 +7,8 @@ export const Title = styled.h3`
   line-height: 1;
   margin-bottom: 16px;
   display: inline-block;
-  padding: 20px;
-  background: red;
+  padding: 10px;
+  border-bottom: 2px solid white;
   line-height: 1;
   border-radius: 4px;
 

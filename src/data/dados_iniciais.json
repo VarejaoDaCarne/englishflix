@@ -3,7 +3,6 @@
     {
       "titulo": "Iniciantes",
       "link": "https://www.ccaa.com.br/ingles-para-iniciantes/",
-      "cor": "#6BD1FF",
       "link_extra": {
         "text": "Para quem está iniciando com Inglês",
         "url": "https://www.ccaa.com.br/ingles-para-iniciantes/"
@@ -37,7 +36,6 @@
     },
     {
       "titulo": "Intermediário",
-      "cor": "#00C86F",
       "link_extra": {
         "text": "Para quem está no nível intermediário do Inglês",
         "url": "https://www.wizard.com.br/idiomas/ingles-intermediario/"
@@ -67,7 +65,6 @@
     },
     {
       "titulo": "Avançado",
-      "cor": "#ff0000",
       "link_extra": {
         "text": "Para quem está no nível avançado do Inglês ",
         "url": "https://certificadocursosonline.com/cursos/curso-de-ingles-avancado-i/"
@@ -97,7 +94,6 @@
     },
     {
       "titulo": "Leitura",
-      "cor": "orange",
       "link_extra": {
         "text": "Aprimore sua leitura em Inglês",
         "url": "https://www.uptime.com.br/blog/aprendendo-ingles-dicas-para-treinar-o-reading"
@@ -127,7 +123,6 @@
     },
     {
       "titulo": "Escrita",
-      "cor": "grey",
       "link_extra": {
         "text": "Aprimore sua escrita em Inglês",
         "url": "https://www.wizard.com.br/idiomas/como-escrever-em-ingles-dicas-para-melhorar-a-escrita/"
@@ -157,7 +152,6 @@
     },
     {
       "titulo": "Escuta",
-      "cor": "#6b5be2",
       "link_extra": {
         "text": "Aprimore sua escuta em Inglês",
         "url": "https://www.inglesnapontadalingua.com.br/2013/06/dicas-para-melhorar-o-listening-em-ingles.html"
@@ -187,7 +181,6 @@
     },
     {
       "titulo": "Pronúncia",
-      "cor": "#B5CB00",
       "link_extra": {
         "text": "Aprimore sua pronúncia em Inglês",
         "url": "https://englishlive.ef.com/pt-br/blog/como-melhorar-sua-pronuncia-em-ingles/"

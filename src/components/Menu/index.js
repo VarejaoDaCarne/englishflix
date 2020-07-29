@@ -1,12 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../../assets/img/Logo.png'
 import './Menu.css'
 import Button from '../Button'
 
-function Menu() {
-    return (
-        <nav className="Menu">
+const Menu = () => {
+  const [noHeaderBackground, setNoHeaderBackground] = useState(true)
+  const [headerHidden] = useState(false)
+  useEffect(() => {
+    window.addEventListener('scroll', changeHeaderBackground, false)
+  }, [])
+
+  const changeHeaderBackground = () => {
+    if (window.scrollY > 0) {
+      setNoHeaderBackground(false)
+    } else {
+      setNoHeaderBackground(true)
+    }
+  }
+
+  return (
+    <>
+      <header
+        className={`Menu ${
+          (noHeaderBackground && 'no-header-background') || 'header-background'
+        } ${(headerHidden && 'header-hidden') || ''}
+        }`}
+      >
+       <nav className="Menu">
             <Link to ="/">
                 <img className="Logo" src={Logo} alt="AluraFlix logo"/>
             </Link>
@@ -15,7 +36,9 @@ function Menu() {
                 Novo vídeo
             </Button>
         </nav>
-    ) 
+      </header>
+    </>
+  )
 }
 
 export default Menu

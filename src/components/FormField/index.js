@@ -1,6 +1,6 @@
 import React from 'react'
 
-function FormField({ label, type, name, value, onChange }) {
+function FormField({ label, type, name, placeholder, value, onChange }) {
     return (
         <>
             <label>
@@ -8,6 +8,7 @@ function FormField({ label, type, name, value, onChange }) {
                 <input
                     type={type}
                     name={name}
+                    placeholder={placeholder}
                     value={value}
                     onChange={onChange}
                 />

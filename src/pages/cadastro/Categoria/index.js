@@ -46,6 +46,7 @@ function CadastroCategoria() {
                 label="Nome da Categoria"
                 type="text"
                 name="name"
+                placeholder="Nova Categoria"
                 value={values.name}
                 onChange={handleChange}
               />
@@ -54,6 +55,7 @@ function CadastroCategoria() {
                 label="Descrição"
                 type="textarea"
                 name="description"
+                placeholder="Coloque à Descrição"
                 value={values.description}
                 onChange={handleChange}
               />
