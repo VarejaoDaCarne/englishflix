@@ -29,7 +29,7 @@ export const VideoCardContainer = styled.a`
   @media (min-width: 720px) {
     &:hover {
       box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
-      width: 400px;
+      width: 350px;
     }
   }
 `;

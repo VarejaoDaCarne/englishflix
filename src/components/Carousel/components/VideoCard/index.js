@@ -19,7 +19,10 @@ function VideoCard({ videoTitle, videoURL, categoryColor }) {
       target="_blank"
       style={{ borderColor: categoryColor || 'red' }}
       title={videoTitle}
-    />
+      >
+
+      {/* <span style={{ color: categoryColor || 'white' }}>{videoTitle}</span> */}
+    </VideoCardContainer>
   );
 }
 

@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 
 export const FooterBase = styled.footer`
-  background: var(--black);
+  background: rgb(10, 10, 10);
   border-top: 2px solid white;
-  padding: 22px 16px;
+  padding: 18px 12px;
   position: relative;
-
   color: var(--white);
   text-align: center;
 

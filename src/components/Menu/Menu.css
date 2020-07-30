@@ -1,40 +1,32 @@
 .Logo {
-  max-width: 150px;
+  max-width: 115px;
 }
 
 @media (max-width: 800px) {
     .Logo {
-        max-width: 105px;
+        max-width: 75px;
     }
 }
 
 .Menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 100;
-    width: 100vw;
-    height: 95px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5%;
-    transition: background-color .6s ease-out;
-  }
- 
-  body {
-    --bodyPaddingTop: 40px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  transition: background-color .6s ease-out;
 }
 
 @media (max-width: 800px) {
   .Menu {
       height: 40px;
       justify-content: center;
-  }
-  body {
-    --bodyPaddingTop: 40px;
-    padding-top: var(--bodyPaddingTop);
   }
 }
 
@@ -43,7 +35,7 @@
 }
 
 .header-background {
-  background-color: black;
+  background-color: rgb(20, 20, 20);
 }
 
 .no-header-background {
