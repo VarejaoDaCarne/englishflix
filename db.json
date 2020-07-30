@@ -2,9 +2,277 @@
     "categorias": [
         {
             "id": 1,
-            "name": "Front-End",
-            "description": "Uma categoria",
-            "cor": "cdbd1ff"
+            "titulo": "Iniciantes",
+            "link_extra": {
+                "text": "Para quem está iniciando com Inglês",
+                "url": "https://www.ccaa.com.br/ingles-para-iniciantes/"
+            }
+        },
+        {
+            "id": 2,
+            "titulo": "Intermediário",
+            "link_extra": {
+                "text": "Para quem está no nível intermediário do Inglês",
+                "url": "https://www.wizard.com.br/idiomas/ingles-intermediario/"
+            }
+        },
+        {
+            "id": 3,
+            "titulo": "Avançado",
+            "link_extra": {
+                "text": "Para quem está no nível avançado do Inglês ",
+                "url": "https://certificadocursosonline.com/cursos/curso-de-ingles-avancado-i/"
+            }
+        },
+        {
+            "id": 4,
+            "titulo": "Leitura",
+            "link_extra": {
+                "text": "Aprimore sua leitura em Inglês",
+                "url": "https://www.uptime.com.br/blog/aprendendo-ingles-dicas-para-treinar-o-reading"
+            }
+        },
+        {
+            "id": 5,
+            "titulo": "Escrita",
+            "link_extra": {
+                "text": "Aprimore sua escrita em Inglês",
+                "url": "https://www.wizard.com.br/idiomas/como-escrever-em-ingles-dicas-para-melhorar-a-escrita/"
+            }
+        },
+        {
+            "id": 6,
+            "titulo": "Escuta",
+            "link_extra": {
+                "text": "Aprimore sua escuta em Inglês",
+                "url": "https://www.inglesnapontadalingua.com.br/2013/06/dicas-para-melhorar-o-listening-em-ingles.html"
+            }
+        },
+        {
+            "id": 7,
+            "titulo": "Pronúncia",
+            "link_extra": {
+                "text": "Aprimore sua pronúncia em Inglês",
+                "url": "https://englishlive.ef.com/pt-br/blog/como-melhorar-sua-pronuncia-em-ingles/"
+            }
+        }
+    ],
+    "videos": [
+        {
+            "id": 1,
+            "categoriaId": 1,
+            "titulo": "Como eu aprendi Inglês? E entendendo padrões!",
+            "url": "https://www.youtube.com/watch?v=OkboNGQ9LU0"
+        },
+        {
+            "id": 2,
+            "categoriaId": 1,
+            "titulo": "DICAS DE INGLÊS PARA INICIANTES, INTERMEDIÁRIOS E AVANÇADOS",
+            "url": "https://www.youtube.com/watch?v=Rn_bDRpwdp8"
+        },
+        {
+            "id": 3,
+            "categoriaId": 1,
+            "titulo": "8 dicas para aprender inglês mais rápidos",
+            "url": "https://www.youtube.com/watch?v=IJE56Uuu-_o"
+        },
+        {
+            "id": 4,
+            "categoriaId": 1,
+            "titulo": "Aulas de ingles Para Iniciantes",
+            "url": "https://www.youtube.com/watch?v=QsxYPwgH-lI"
+        },
+        {
+            "id": 5,
+            "categoriaId": 1,
+            "titulo": "Quais textos são ideais para iniciantes no inglês? | Mairo Vergara",
+            "url": "https://www.youtube.com/watch?v=_HFZVTkf8f0"
+        },
+        {
+            "id": 6,
+            "categoriaId": 1,
+            "titulo": "Aprender inglês | Por onde começar?",
+            "url": "https://www.youtube.com/watch?v=d4T5YgwKzJo"
+        },
+        {
+            "id": 7,
+            "categoriaId": 2,
+            "titulo": "Teste de Inglês Intermediário: Consegue Acertar?",
+            "url": "https://www.youtube.com/watch?v=C1f7tdbb-f4"
+        },
+        {
+            "id": 8,
+            "categoriaId": 2,
+            "titulo": "Como passar do intermediário para o avançado - SEGREDO! - Dica de Inglês 2018",
+            "url": "https://www.youtube.com/watch?v=YmhU17Ejct4"
+        },
+        {
+            "id": 9,
+            "categoriaId": 2,
+            "titulo": "Como sair do nível intermediário no inglês? | Mairo Vergara",
+            "url": "https://www.youtube.com/watch?v=MtqSaZrgC-c"
+        },
+        {
+            "id": 10,
+            "categoriaId": 2,
+            "titulo": "Saia do Intermediário: Como melhorar seu inglês no trabalho",
+            "url": "https://www.youtube.com/watch?v=WcdMQzZctOo"
+        }, 
+        {
+            "id": 11,
+            "categoriaId": 2,
+            "titulo": "SAINDO DO MALDITO NÍVEL INTERMEDIÁRIO NO INGLÊS",
+            "url": "https://www.youtube.com/watch?v=-lUf3AMWBXY"
+        },
+        {
+            "id": 12,
+            "categoriaId": 3,
+            "titulo": "Dica de inglês avançado | Advanced English tip",
+            "url": "https://www.youtube.com/watch?v=vnNloWou1g4"
+        },
+        {
+            "id": 13,
+            "categoriaId": 3,
+            "titulo": "Como aumentar vocabulário em inglês avançado - Dica de inglês grátis nível avançado",
+            "url": "https://www.youtube.com/watch?v=vy-EXoCdiA4"
+        },
+        {
+            "id": 14,
+            "categoriaId": 3,
+            "titulo": "Seu Inglês Estagnou no Nível Avançado? | Mairo Vergara",
+            "url": "https://www.youtube.com/watch?v=yJygcOi2w7c"
+        },
+        {
+            "id": 15,
+            "categoriaId": 3,
+            "titulo": "CANAIS PARA INGLÊS AVANÇADO | com legenda em inglês",
+            "url": "https://www.youtube.com/watch?v=KeNl5-RYOO4"
+        },
+        {
+            "id": 16,
+            "categoriaId": 3,
+            "titulo": "5 dicas que vão melhorar MUITO o seu inglês",
+            "url": "https://www.youtube.com/watch?v=p5QncQhAkNQ"
+        },
+        {
+            "id": 17,
+            "categoriaId": 4,
+            "titulo": "Saiba como praticar o READING sozinho! 7 DICAS!",
+            "url": "https://www.youtube.com/watch?v=bnuM6wwjswk"
+        },
+        {
+            "id": 18,
+            "categoriaId": 4,
+            "titulo": "Dicas para melhorar a leitura em inglês - Estratégias",
+            "url": "https://www.youtube.com/watch?v=wT6S1kebp7I"
+        },
+        {
+            "id": 19,
+            "categoriaId": 4,
+            "titulo": "Como melhorar seu reading - Turbine agora seu inglês",
+            "url": "https://www.youtube.com/watch?v=gNR11oWUtG0"
+        },
+        {
+            "id": 20,
+            "categoriaId": 4,
+            "titulo": "5 Estratégias Poderosas pra Melhorar o Reading em Inglês",
+            "url": "https://www.youtube.com/watch?v=uSLhKaQF5HY"
+        },
+        {
+            "id": 21,
+            "categoriaId": 4,
+            "titulo": "4 dicas para READING nos testes de proficiência (TOEFL, IELTS, etc)",
+            "url": "https://www.youtube.com/watch?v=5BDxWRNsvqc"
+        },
+        {
+            "id": 22,
+            "categoriaId": 5,
+            "titulo": "Como melhorar o writing - Vamos escrever em inglês",
+            "url": "https://www.youtube.com/watch?v=WilmJzuOmjg"
+        },
+        {
+            "id": 23,
+            "categoriaId": 5,
+            "titulo": "Como Melhorar A Escrita Em Inglês",
+            "url": "https://www.youtube.com/watch?v=qn2jU56QdSI"
+        },
+        {
+            "id":24,
+            "categoriaId": 5,
+            "titulo": "5 formas de melhorar seu writing! - Aula de Inglês #80",
+            "url": "https://www.youtube.com/watch?v=5DcJ_D_7j0g"
+        },
+        {
+            "id": 25,
+            "categoriaId": 5,
+            "titulo": "4 Dicas Para Melhorar seu WRITING | Aula do Inglês Feito Fácil - IFF",
+            "url": "https://www.youtube.com/watch?v=P0x1oPZPcAI"
+        },
+        {
+            "id": 26,
+            "categoriaId": 5,
+            "titulo": "4 TÁTICAS MATADORAS para praticar seu WRITING sozinho!",
+            "url": "https://www.youtube.com/watch?v=fCSEIMw2zIQ"
+        },
+        {
+            "id": 27,
+            "categoriaId": 6,
+            "titulo": "4 dicas para treinar o seu listening no inglês | Mairo Vergara | Parte 10 de 365",
+            "url": "https://www.youtube.com/watch?v=oEwDLHNj9ok"
+        },
+        {
+            "id": 28,
+            "categoriaId": 6,
+            "titulo": "Como Melhorar O Listening RÁPIDO?! - 5 Erros Ao Praticar O Listening",
+            "url": "https://www.youtube.com/watch?v=VH5KEnloWlI"
+        },
+        {
+            "id": 29,
+            "categoriaId": 6,
+            "titulo": "COMO MELHORAR O LISTENING EM INGLÊS?",
+            "url": "https://www.youtube.com/watch?v=jeyK0jAfgfo"
+        },
+        {
+            "id": 30,
+            "categoriaId": 6,
+            "titulo": "Sites para praticar o listening em inglês - Série Listening - Vídeo #3",
+            "url": "https://www.youtube.com/watch?v=0e8T1j-ONJw"
+        },
+        {
+            "id": 31,
+            "categoriaId": 6,
+            "titulo": "Como Treinar Seu Listening em Inglês",
+            "url": "https://www.youtube.com/watch?v=too1TW3zBlE"
+        },
+        {
+            "id": 32,
+            "categoriaId": 7,
+            "titulo": "DICAS DE PRONÚNCIA EM INGLÊS - 03 - SEMANA DA PRONÚNCIA - AULA MAIS TOP!!!",
+            "url": "https://www.youtube.com/watch?v=otiPUiqOwaw"
+        },
+        {
+            "id": 33,
+            "categoriaId": 7,
+            "titulo": "Dicas de pronúncia em inglês - R, H, E e Y - E-Dublin Class#15",
+            "url": "https://www.youtube.com/watch?v=ntSsOHYa5Ms"
+        },
+        {
+            "id": 34,
+            "categoriaId": 7,
+            "titulo": "COMO MELHORAR SUA PRONÚNCIA NO INGLÊS?",
+            "url": "https://www.youtube.com/watch?v=1D2hZhRXftY"
+        },
+        {
+            "id": 35,
+            "categoriaId": 7,
+            "titulo": "FALE COMO UM NATIVO - SUPER DICA DE INGLÊS - PRONÚNCIA",
+            "url": "https://www.youtube.com/watch?v=3_MIas1deFk"
+        },
+        {
+            "id": 36,
+            "categoriaId": 7,
+            "titulo": "Melhore Sua Pronúncia em Inglês em Apenas 16 Minutos",
+            "url": "https://www.youtube.com/watch?v=k1MWWhwuIp8"
         }
     ]
 }

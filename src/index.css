@@ -26,4 +26,5 @@ a {
   min-height: calc(100vh - var(--bodyPaddingTop));
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
