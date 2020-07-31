@@ -31,7 +31,7 @@ function Home() {
               <BannerMain
                 videoTitle={initalValues[0].videos[0].titulo}
                 url={initalValues[0].videos[0].url}
-                videoDescription={initalValues[0].videos[0].description}
+                videoDescription='Desta vez quero explorar como eu aprendi inglês e aproveitar pra explicar porque é tão importante inglês na nossa área e também porque NÃO é tão complicado como muita gente pensa. Trabalhoso, sim. Caro ou complicado, não. Uma tangente neste assunto será tocar no que muita gente pensa sobre "padrões" e o erro nesse pensamento. Fiquem ligados!'
               />
               <Carousel
                 ignoreFirstVideo

@@ -6,7 +6,8 @@ import Button from '../../../components/Button'
 import FormField from '../../../components/FormField'
 import videsRepository from '../../../repositories/videos'
 import categoriasRepository from '../../../repositories/categorias'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import './index.css'
 
 const StyledLink = styled(Link)`
     color: var(--white);
@@ -20,9 +21,7 @@ const StyledLink = styled(Link)`
     outline: none;
     border-radius: 5px;
     text-decoration: none;
-    display: inline-block;
     transition: opacity .3s;
-    margin-left: 26.2vw;
     &:hover,
     &:focus {
         opacity: .5;
@@ -93,13 +92,15 @@ function CadastroVideo() {
             suggestions={categoryTitles}
           />
 
-          <Button type="submit">
-            Cadastrar Vídeo
-          </Button>
+          <div className="buttons-wrapper">
+            <Button type="submit">
+              Cadastrar Vídeo
+            </Button>
 
-          <StyledLink to="/cadastro/categoria">
-            Cadastrar Categoria
-          </StyledLink>
+            <StyledLink to="/cadastro/categoria">
+              Cadastrar Categoria
+            </StyledLink>
+          </div>
         </form>
       </PageDefault>
     )
