@@ -3,6 +3,7 @@ import PageDefault from '../../../components/PageDefault'
 import FormField from '../../../components/FormField'
 import { Link } from 'react-router-dom'
 import Button from '../../../components/Button'
+import useForm from '../../../hooks/useForm'
 
 function CadastroCategoria() {
   const initialsValues = {
@@ -11,22 +12,9 @@ function CadastroCategoria() {
     color: ''
   }
 
+  const { handleChange, values, clearForm } = useForm(initialsValues)
+
   const [categorias, setCategorias] = useState([])
-  const [values, setValues] = useState(initialsValues)
-
-  function setValue(key, value) {
-    setValues({
-      ...values,
-      [key]: value
-    })
-  }
-
-  function handleChange(event) {
-      setValue(
-        event.target.getAttribute('name'),
-        event.target.value
-      )
-  }
   
   useEffect(() => {
     const URL = window.location.hostname.includes('localhost')
@@ -45,66 +33,66 @@ function CadastroCategoria() {
   return (
       <>
         <PageDefault>
-            <h1>Cadastro de Categoria: {values.name}</h1>
+          <h1>Cadastro de Categoria: {values.name}</h1>
 
-            <form onSubmit={(event) => {
-              event.preventDefault()
-              setCategorias([
-                ...categorias,
-                values
-              ])
+          <form onSubmit={(event) => {
+            event.preventDefault()
+            setCategorias([
+              ...categorias,
+              values
+            ])
 
-              setValues(initialsValues)
-            }}>
+            clearForm()
+          }}>
 
-              <FormField
-                label="Nome da Categoria"
-                type="text"
-                name="name"
-                value={values.name}
-                onChange={handleChange}
-              />
+            <FormField
+              label="Nome da Categoria"
+              type="text"
+              name="name"
+              value={values.name}
+              onChange={handleChange}
+            />
 
-              <FormField
-                label="Descrição"
-                type="textarea"
-                name="description"
-                value={values.description}
-                onChange={handleChange}
-              />
+            <FormField
+              label="Descrição"
+              type="textarea"
+              name="description"
+              value={values.description}
+              onChange={handleChange}
+            />
 
-              <FormField
-                label="Cor"
-                type="color"
-                name="color"
-                value={values.color}
-                onChange={handleChange}
-              />
+            <FormField
+              label="Cor"
+              type="color"
+              name="color"
+              value={values.color}
+              onChange={handleChange}
+            />
 
-              <Button>
-                Cadastrar
-              </Button>
-            </form>
-            
-            {categorias.length === 0 && (
-              <div>
-                Loading...
-              </div>
-            )}
+            <Button>
+              Cadastrar Categoria
+            </Button>
+          </form>
+          
+          {categorias.length === 0 && (
+            <div>
+              Loading...
+            </div>
+          )}
 
-            <ul>
-              {categorias.map((categoria, indice) => {
-                return (
-                  <li key={`${categoria}${indice}`}>
-                    {categoria.name}
-                  </li>
-                )
-              })}
-            </ul>
+          <ul>
+            {categorias.map((categoria, indice) => {
+              return (
+                <li key={`${categoria}${indice}`}>
+                  {categoria.titulo}
+                </li>
+              )
+            })}
+          </ul>
 
-            <Link to="">
-              Ir para home
-            </Link>
+          <Link to="/cadastro/categoria">
+            Ir para home
+          </Link>
         </PageDefault>
       </>
     )
