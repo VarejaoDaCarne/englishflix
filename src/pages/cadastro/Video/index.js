@@ -1,32 +1,12 @@
 import React, { useState, useEffect} from 'react'
 import PageDefault from '../../../components/PageDefault'
-import { Link, useHistory, NavLink } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import useForm from '../../../hooks/useForm'
 import Button from '../../../components/Button'
 import FormField from '../../../components/FormField'
 import videsRepository from '../../../repositories/videos'
 import categoriasRepository from '../../../repositories/categorias'
-import styled, { css } from 'styled-components'
-import './index.css'
-
-const StyledLink = styled(Link)`
-    color: var(--white);
-    border: 1px solid var(--white);
-    box-sizing: border-box;
-    cursor: pointer;
-    padding: 10px 14px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    outline: none;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: opacity .3s;
-    &:hover,
-    &:focus {
-        opacity: .5;
-    }
-`
+import { StyledForm, StyledLink, ButtonWrapper }from '../styles.js'
 
 function CadastroVideo() {
   const history = useHistory()
@@ -50,7 +30,7 @@ function CadastroVideo() {
       <PageDefault>
         <h1>Cadastro de Vídeo</h1>
 
-        <form onSubmit={(event) => {
+        <StyledForm onSubmit={(event) => {
           event.preventDefault()
           alert('Vídeo cadastrado com sucesso!')
 
@@ -92,16 +72,16 @@ function CadastroVideo() {
             suggestions={categoryTitles}
           />
 
-          <div className="buttons-wrapper">
-            <Button type="submit">
-              Cadastrar Vídeo
-            </Button>
+            <ButtonWrapper>
+              <Button type="submit">
+                Cadastrar Vídeo
+              </Button>
 
-            <StyledLink to="/cadastro/categoria">
-              Cadastrar Categoria
-            </StyledLink>
-          </div>
-        </form>
+              <StyledLink to="/cadastro/categoria">
+                Cadastrar Categoria
+              </StyledLink>
+            </ButtonWrapper>
+        </StyledForm>
       </PageDefault>
     )
 }

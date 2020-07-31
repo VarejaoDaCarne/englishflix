@@ -2,7 +2,7 @@
     "categorias": [
         {
             "id": 1,
-            "titulo": "Iniciantes",
+            "titulo": "Iniciante",
             "link_extra": {
                 "text": "Para quem está iniciando com Inglês",
                 "url": "https://www.ccaa.com.br/ingles-para-iniciantes/"

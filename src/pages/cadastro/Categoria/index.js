@@ -4,6 +4,7 @@ import FormField from '../../../components/FormField'
 import { Link } from 'react-router-dom'
 import Button from '../../../components/Button'
 import useForm from '../../../hooks/useForm'
+import { StyledForm, StyledLink, ButtonWrapper }from '../styles.js'
 
 function CadastroCategoria() {
   const initialsValues = {
@@ -35,7 +36,7 @@ function CadastroCategoria() {
         <PageDefault>
           <h1>Cadastro de Categoria: {values.name}</h1>
 
-          <form onSubmit={(event) => {
+          <StyledForm onSubmit={(event) => {
             event.preventDefault()
             setCategorias([
               ...categorias,
@@ -69,10 +70,16 @@ function CadastroCategoria() {
               onChange={handleChange}
             />
 
-            <Button>
-              Cadastrar Categoria
-            </Button>
-          </form>
+            <ButtonWrapper>
+              <Button>
+                Cadastrar Categoria
+              </Button>
+
+              <StyledLink to="/">
+                Ir para home
+              </StyledLink>
+            </ButtonWrapper>
+          </StyledForm>
           
           {categorias.length === 0 && (
             <div>
@@ -90,9 +97,7 @@ function CadastroCategoria() {
             })}
           </ul>
 
-          <Link to="/cadastro/categoria">
-            Ir para home
-          </Link>
+
         </PageDefault>
       </>
     )

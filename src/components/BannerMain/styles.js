@@ -46,7 +46,7 @@ ContentAreaContainer.Category = styled.h1`
 `;
 
 ContentAreaContainer.Description = styled.p`
-  font-size: 18px;
+  font-size: 16px;
   text-align: left;
   margin-right: 15px;
   line-height: 24px;
