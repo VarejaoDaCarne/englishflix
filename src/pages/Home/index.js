@@ -3,7 +3,8 @@ import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
 import categoriasRepository from '../../repositories/categorias'
 import Menu from '../../components/Menu';
-import Footer from '../../components/Footer';
+// import Footer from '../../components/Footer';
+import PageDefault from '../../components/PageDefault';
 
 function Home() {
   const [initalValues, setInitalValues] = useState([])
@@ -20,37 +21,37 @@ function Home() {
 
   return (
     <div style={{ background: "#141414" }}>
-    <Menu />
+      <Menu />
+        <PageDefault paddingAll={0}>
+          {initalValues.length === 0 && (<div>Loading...</div>)}
 
-      {initalValues.length === 0 && (<div>Loading...</div>)}
+          {initalValues.map((categoria, index) => {
+            if(index === 0) {
+              return (
+                <div key={categoria.id}>
+                  <BannerMain
+                    videoTitle={initalValues[0].videos[0].titulo}
+                    url={initalValues[0].videos[0].url}
+                    videoDescription='Desta vez quero explorar como eu aprendi inglês e aproveitar pra explicar porque é tão importante inglês na nossa área e também porque NÃO é tão complicado como muita gente pensa. Trabalhoso, sim. Caro ou complicado, não. Uma tangente neste assunto será tocar no que muita gente pensa sobre "padrões" e o erro nesse pensamento. Fiquem ligados!'
+                  />
+                  <Carousel
+                    ignoreFirstVideo
+                    category={initalValues[0]}
+                  />  
+                </div>
+              )
+            }
 
-      {initalValues.map((categoria, index) => {
-        if(index === 0) {
-          return (
-            <div key={categoria.id}>
-              <BannerMain
-                videoTitle={initalValues[0].videos[0].titulo}
-                url={initalValues[0].videos[0].url}
-                videoDescription='Desta vez quero explorar como eu aprendi inglês e aproveitar pra explicar porque é tão importante inglês na nossa área e também porque NÃO é tão complicado como muita gente pensa. Trabalhoso, sim. Caro ou complicado, não. Uma tangente neste assunto será tocar no que muita gente pensa sobre "padrões" e o erro nesse pensamento. Fiquem ligados!'
-              />
+            return (
               <Carousel
-                ignoreFirstVideo
-                category={initalValues[0]}
-              />  
-            </div>
-          )
-        }
+                key={categoria.id}
+                category={categoria}
+              />
+            )
+          })}
 
-        return (
-          <Carousel
-            key={categoria.id}
-            category={categoria}
-          />
-        )
-      })}
-
-      <Footer />
-      </div>
+        </PageDefault>
+    </div>
   )
 }
 

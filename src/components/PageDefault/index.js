@@ -18,13 +18,13 @@ const Main = styled.main`
 
 function PageDefault({ children, paddingAll }) {
     return (
-        <>
+        <React.Fragment>
             <Menu />
                 <Main paddingAll={paddingAll}>
                     {children}
                 </Main>
             <Footer />
-        </>
+        </React.Fragment>
     )
 }
 

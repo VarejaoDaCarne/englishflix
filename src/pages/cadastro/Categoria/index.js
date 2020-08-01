@@ -3,93 +3,122 @@ import PageDefault from '../../../components/PageDefault'
 import FormField from '../../../components/FormField'
 import Button from '../../../components/Button'
 import useForm from '../../../hooks/useForm'
-import { StyledForm, StyledLink, ButtonWrapper }from '../styles.js'
+import categoriasRepository from '../../../repositories/categorias';
+import { 
+    StyledForm,
+    StyledLink,
+    FormWrapper,
+    StyledLi, 
+    StyledLiItem ,
+    ButtonWrapper,
+    Dot
+  } from '../styles.js'
 
 function CadastroCategoria() {
   const initialsValues = {
-    name: '',
-    description: '',
+    titulo: '',
+    link_extra: {
+      text: '',
+      url: ''
+    }
   }
 
   const { handleChange, values, clearForm } = useForm(initialsValues)
 
   const [categorias, setCategorias] = useState([])
-  
-  useEffect(() => {
-    const URL = window.location.hostname.includes('localhost')
-    ? 'http://localhost:8080/categorias'
-    : 'https://englishflix.herokuapp.com/categorias'
 
-    fetch(URL)
-      .then(async (serverResponse) => {
-        const response = await serverResponse.json()
-        setCategorias([
-          ...response
-        ])
+  function onSubmitHandler(event) {
+    event.preventDefault()
+    setCategorias([{
+      ...categorias, 
+      titulo: values.titulo,
+      text: values.text,
+      url: values.url
+    }])
+
+    categoriasRepository.insert(values)
+      .then((resposta) => {
+        console.log(resposta)
+        clearForm(initialsValues)
+      })
+      .catch((error) => {
+        console.log(error)
+      });
+  }
+
+  useEffect(() => {
+    categoriasRepository.getAll().then((categoriasComVideos) => {
+      setCategorias(categoriasComVideos);
+    })
+      .catch((error) => {
+        alert(error)
       })
   }, [])
 
   return (
-      <>
-        <PageDefault>
-          <h1>Cadastro de Categoria: {values.name}</h1>
+    <PageDefault>
+      <h1>Cadastro de Categoria: {values.titulo}</h1> 
 
-          <StyledForm onSubmit={(event) => {
-            event.preventDefault()
-            setCategorias([
-              ...categorias,
-              values
-            ])
+      <FormWrapper>
+      <StyledForm as="form" onSubmit={onSubmitHandler}>
 
-            clearForm()
-          }}>
+        <FormField
+          label="Nome da Categoria"
+          type="text"
+          name="titulo"
+          value={values.titulo}
+          onChange={handleChange}
+        />
 
-            <FormField
-              label="Nome da Categoria"
-              type="text"
-              name="name"
-              value={values.name}
-              onChange={handleChange}
-            />
+        <FormField
+          label="Descrição"
+          type="textarea"
+          name="text"
+          value={values.text}
+          onChange={handleChange}
+        />
 
-            <FormField
-              label="Descrição"
-              type="textarea"
-              name="description"
-              value={values.description}
-              onChange={handleChange}
-            />
+        <FormField
+          label="URL"
+          type="url"
+          name="url"
+          value={values.url}
+          onChange={handleChange}
+        />
 
-            <ButtonWrapper>
-              <Button>
-                Cadastrar Categoria
-              </Button>
+        <ButtonWrapper>
+          <Button as="button" style={{ backgroundColor: 'Black' }} type="submit">
+            Cadastrar Categoria
+          </Button>
 
-              <StyledLink to="/">
-                Ir para home
-              </StyledLink>
-            </ButtonWrapper>
-          </StyledForm>
-          
-          {categorias.length === 0 && (
-            <div>
-              Loading...
-            </div>
-          )}
+          <StyledLink to="/">
+            Ir para home
+          </StyledLink>
+        </ButtonWrapper>
+      </StyledForm>
+      
+      {categorias.length === 0 && (
+        <div>
+          Loading...
+        </div>
+      )}
 
-          <ul>
-            {categorias.map((categoria, indice) => {
-              return (
-                <li key={`${categoria}${indice}`}>
-                  {categoria.titulo}
-                </li>
-              )
-            })}
-          </ul>
+      <StyledLi>
+        <>
+          <h3 style={{ margin: '0', position: 'absolute', top: '75px'}}>Categorias Registradas:</h3>
 
-
-        </PageDefault>
-      </>
+          {categorias.map((categoria, indice) => {
+            return (
+                <StyledLiItem key={`${categoria}${indice}`}>
+                  <Dot />
+                  <span>{categoria.titulo}</span>
+                </StyledLiItem>
+            )
+          })}
+        </>
+      </StyledLi>
+      </FormWrapper>
+    </PageDefault>
     )
 }
 

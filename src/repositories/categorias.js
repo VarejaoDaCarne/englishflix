@@ -28,7 +28,27 @@ function getAllWithVideos() {
       })
 }
 
+function insert(values) {
+  const requestOptions = {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(values),
+  }
+
+  return fetch(URL_CATEGORIES, requestOptions)
+    .then(async (serverResponse) => {
+      if (serverResponse.ok) {
+        const response = await serverResponse.json()
+            
+        return response
+      }
+
+      throw new Error('Não foi possível pegar os dados');
+    })
+}
+
 export default {
     getAllWithVideos,
-    getAll
+    getAll,
+    insert
 }

@@ -6,14 +6,14 @@ function useForm(initialsValues) {
     function setValue(key, value) {
       setValues({
         ...values,
-        [key]: value
+        [key]: value,
       })
     }
   
     function handleChange(event) {
         setValue(
           event.target.getAttribute('name'),
-          event.target.value
+          event.target.value,
         )
     }
   
@@ -24,7 +24,7 @@ function useForm(initialsValues) {
     return {
       values,
       handleChange,
-      clearForm
+      clearForm,
     }
 }
 
