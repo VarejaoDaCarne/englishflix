@@ -78,7 +78,7 @@ function CadastroVideo() {
               </Button>
 
               <StyledLink to="/cadastro/categoria">
-                Cadastrar Categoria
+                Ir para Cadastro Categoria
               </StyledLink>
             </ButtonWrapper>
         </StyledForm>
