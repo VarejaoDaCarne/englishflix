@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import PageDefault from '../../../components/PageDefault'
 import FormField from '../../../components/FormField'
-import { Link } from 'react-router-dom'
 import Button from '../../../components/Button'
 import useForm from '../../../hooks/useForm'
 import { StyledForm, StyledLink, ButtonWrapper }from '../styles.js'
@@ -10,7 +9,6 @@ function CadastroCategoria() {
   const initialsValues = {
     name: '',
     description: '',
-    color: ''
   }
 
   const { handleChange, values, clearForm } = useForm(initialsValues)
@@ -59,14 +57,6 @@ function CadastroCategoria() {
               type="textarea"
               name="description"
               value={values.description}
-              onChange={handleChange}
-            />
-
-            <FormField
-              label="Cor"
-              type="color"
-              name="color"
-              value={values.color}
               onChange={handleChange}
             />
 
