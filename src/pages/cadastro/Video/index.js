@@ -39,7 +39,6 @@ function CadastroVideo() {
         <FormWrapper>
           <StyledForm as="form" onSubmit={(event) => {
             event.preventDefault()
-            alert('Vídeo cadastrado com sucesso!')
 
             const categoriaEscolhida = categorias.find((categoria) => {
               return categoria.titulo === values.categoria

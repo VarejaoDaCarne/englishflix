@@ -3,7 +3,6 @@ import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
 import categoriasRepository from '../../repositories/categorias'
 import Menu from '../../components/Menu';
-// import Footer from '../../components/Footer';
 import PageDefault from '../../components/PageDefault';
 
 function Home() {

@@ -23,44 +23,37 @@ function CadastroCategoria() {
     }
   }
 
-  const { handleChange, values, clearForm } = useForm(initialsValues)
-
   const [categorias, setCategorias] = useState([])
 
-  function onSubmitHandler(event) {
-    event.preventDefault()
-    setCategorias([{
-      ...categorias, 
-      titulo: values.titulo,
-      text: values.text,
-      url: values.url
-    }])
-
-    categoriasRepository.insert(values)
-      .then((resposta) => {
-        console.log(resposta)
-        clearForm(initialsValues)
-      })
-      .catch((error) => {
-        console.log(error)
-      });
-  }
-
   useEffect(() => {
-    categoriasRepository.getAll().then((categoriasComVideos) => {
-      setCategorias(categoriasComVideos);
-    })
-      .catch((error) => {
-        alert(error)
-      })
+    categoriasRepository
+      .getAll()
+      .then((categoriasFromDB) => setCategorias(categoriasFromDB))
   }, [])
+
+  const { handleChange, values, clearForm } = useForm(initialsValues)
 
   return (
     <PageDefault>
       <h1>Cadastro de Categoria: {values.titulo}</h1> 
 
       <FormWrapper>
-      <StyledForm as="form" onSubmit={onSubmitHandler}>
+      <StyledForm as="form" onSubmit={(event) => {
+        event.preventDefault()
+
+        categoriasRepository.insert({
+          titulo: values.titulo,
+          link_extra: {
+            text: values.text,
+            url: values.url
+          }
+        }).then(() => categoriasRepository
+          .getAll()
+          .then((categoriasFromDB) => setCategorias(categoriasFromDB)));
+
+          clearForm();
+        }}
+      >
 
         <FormField
           label="Nome da Categoria"
@@ -72,7 +65,7 @@ function CadastroCategoria() {
 
         <FormField
           label="Descrição"
-          type="textarea"
+          as="textarea"
           name="text"
           value={values.text}
           onChange={handleChange}
@@ -109,10 +102,10 @@ function CadastroCategoria() {
 
           {categorias.map((categoria, indice) => {
             return (
-                <StyledLiItem key={`${categoria}${indice}`}>
-                  <Dot />
-                  <span>{categoria.titulo}</span>
-                </StyledLiItem>
+              <StyledLiItem key={`${categoria}${indice}`}>
+                <Dot />
+                <span>{categoria.titulo}</span>
+              </StyledLiItem>
             )
           })}
         </>

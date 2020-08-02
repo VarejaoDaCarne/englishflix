@@ -29,22 +29,24 @@ function getAllWithVideos() {
 }
 
 function insert(values) {
-  const requestOptions = {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(values),
-  }
 
-  return fetch(URL_CATEGORIES, requestOptions)
+  return fetch(URL_CATEGORIES, {
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/json',
+    },
+
+    body: JSON.stringify(values),
+  })
     .then(async (serverResponse) => {
-      if (serverResponse.ok) {
-        const response = await serverResponse.json()
-            
-        return response
+      if (await serverResponse.ok) {
+        const resultado = values;
+
+        return resultado;
       }
 
-      throw new Error('Não foi possível pegar os dados');
-    })
+      throw new Error('Não foi possível pegar os dados.');
+    });
 }
 
 export default {
