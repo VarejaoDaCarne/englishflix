@@ -4,7 +4,7 @@
 </h1>
 
 <h3 align="center">
-    📺 Sua plataforma de videos para aprender inglês
+    📺 Plataforma de vídeos inspirado na Netflix para aprender inglês
 </h3>
 
 <p align="center">
