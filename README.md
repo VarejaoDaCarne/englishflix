@@ -1,6 +1,6 @@
 
 <h1 align="center" >
-    <img alt="Logo Englishflix" src="./src/assets/img/Logo.png" />
+    <img alt="Logo Englishflix" src="./src/assets/img/Logo-Github.png" />
 </h1>
 
 <h3 align="center">
