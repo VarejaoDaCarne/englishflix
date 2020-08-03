@@ -24,7 +24,7 @@
 </p>
 
 <h1 align="center">
-    <img alt="NextLevelWeek#02" title="#NextLevelWeek#02" src="/images/banner.png" />
+    <img alt="NextLevelWeek#02" title="#NextLevelWeek#02" src="/src/assets/home.png" />
 </h1>
 
 <h4 align="center"> 
@@ -69,17 +69,13 @@ Projeto desenvolvido durante a **Imesão React** oferecida pela [Alura](https://
 ### Cadastro de vídeo 
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/web.svg" width="400px">
-
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/sucesso-web.svg" width="400px">
+  	<img alt="Página de cadastro de vídeo" src="/src/assets/video.png" width="400px">
 </p>
 
 ### Criar categoria
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/web.svg" width="400px">
-
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/sucesso-web.svg" width="400px">
+	<img alt="Página de cadastro de categoria" src="/src/assets/category.png" width="400px">
 </p>
 
 ---
@@ -125,11 +121,11 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   **[React Icons](https://react-icons.github.io/react-icons/)**
 -   **[React Router Dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
 -   **[React Scripts](https://github.com/facebook/create-react-app/tree/master/packages/react-scripts)**
--   **[React Slick]https://github.com/akiran/react-slick)**
+-   **[React Slick](https://github.com/akiran/react-slick)**
 -   **[Prop Types](https://pt-br.reactjs.org/docs/typechecking-with-proptypes.html)**
 -   **[Styled Components](https://styled-components.com/)**
 
-> Veja o arquivo  [package.json]https://github.com/grioos/englishflix/blob/master/package.json)
+> Veja o arquivo  [package.json](https://github.com/grioos/englishflix/blob/master/package.json)
 
 ---
 
