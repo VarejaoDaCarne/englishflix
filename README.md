@@ -113,8 +113,8 @@ $ npm run dev
 As seguintes ferramentas foram usadas na construção do projeto:
 -   **[Concurrently](https://github.com/kimmobrunfeldt/concurrently)**
 -   **[Express](https://expressjs.com/)**
--   **([NodeJS](https://nodejs.org/en/)**
--   **[JavaScript](https://www.javascript.com/))**
+-   **[NodeJS](https://nodejs.org/en/)**
+-   **[JavaScript](https://www.javascript.com/)**
 -   **[JSON Server](https://github.com/typicode/json-server)**
 -   **[React](https://reactjs.org/)**
 -   **[React Dom](https://pt-br.reactjs.org/docs/react-dom.html)**
