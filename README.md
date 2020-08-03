@@ -72,7 +72,7 @@ Projeto desenvolvido durante a **Imesão React** oferecida pela [Alura](https://
   	<img alt="Página de cadastro de vídeo" src="./src/assets/img/video.png" width="100%">
 </p>
 
-### Criar categoria
+### Cadastro de categoria
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
 	<img alt="Página de cadastro de categoria" src="./src/assets/img/category.png" width="100%">
