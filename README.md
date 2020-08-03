@@ -1,6 +1,6 @@
 
 <h1 align="center" >
-    <img alt="Logo Englishflix" src="/src/assets/Logo.png" />
+    <img alt="Logo Englishflix" src="./src/assets/Logo.png" />
 </h1>
 
 <h3 align="center">
@@ -24,7 +24,7 @@
 </p>
 
 <h1 align="center">
-    <img alt="NextLevelWeek#02" title="#NextLevelWeek#02" src="/src/assets/home.png" />
+    <img alt="Home Page" src="./src/assets/home.png" />
 </h1>
 
 <h4 align="center"> 
@@ -69,13 +69,13 @@ Projeto desenvolvido durante a **Imesão React** oferecida pela [Alura](https://
 ### Cadastro de vídeo 
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  	<img alt="Página de cadastro de vídeo" src="/src/assets/video.png" width="400px">
+  	<img alt="Página de cadastro de vídeo" src="./src/assets/video.png" width="400px">
 </p>
 
 ### Criar categoria
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-	<img alt="Página de cadastro de categoria" src="/src/assets/category.png" width="400px">
+	<img alt="Página de cadastro de categoria" src="./src/assets/category.png" width="400px">
 </p>
 
 ---
