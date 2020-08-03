@@ -13,7 +13,7 @@
   <img alt="Tamanho do repositório" src="https://img.shields.io/github/repo-size/grioos/englishflix">
 
   <a href="https://github.com/grioos/README-proffy/commits/master">
-    <img alt="GitHub último commit" src="https://img.shields.io/github/last-commit/grioos/englishflix?color=%4d0000">
+    <img alt="GitHub último commit" src="https://img.shields.io/github/last-commit/grioos/englishflix">
   </a>
     
    <img alt="License" src="https://img.shields.io/badge/license-MIT-8622f8">
