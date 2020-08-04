@@ -33,7 +33,6 @@
 
 <p align="center">
   <a href="#-sobre-o-projeto">Sobre</a> •
-  <a href="#-funcionalidades">Funcionalidades</a> •
   <a href="#-layout">Layout</a> • 
   <a href="#-como-executar-o-projeto">Como executar</a> • 
   <a href="#-tecnologias">Tecnologias</a> • 
@@ -50,19 +49,6 @@ Projeto desenvolvido durante a **Imesão React** oferecida pela [Alura](https://
 
 ---
 
-## ⚙️ Funcionalidades
-
-- [x] Vídeos podem ser cadastrados na plataforma enviando:
-  - [x] um título com o nome do vídeo
-  - [x] url do vídeo para demostração na home
-  - [x] e a escolha de uma categoria que melhor se encaixa com o conteúdo
-
-- [x] Categorias podem ser cadastrados na plataforma enviando:
-  - [x] um nome para a categoria
-  - [x] descrição com melhor explicação sobre o que se adicionar nesta categoria
-  - [x] url para um site ou vídeo, servindo como um plus" para a categoria
-
----
 
 ## 🎨 Layout
 
