@@ -132,7 +132,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
  <br />
 
 [![Linkedin Badge](https://img.shields.io/badge/-grioos-black?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/grioos/)](https://www.linkedin.com/in/grioos/) 
-[![Instagram Badge](https://img.shields.io/badge/-@grioos_-black?style=flat-square&logo=Instagram&logoColor=white&link=https://www.instagram.com/grioos_/)](https://www.instagram.com/grioos_/)
 [![Gmail Badge](https://img.shields.io/badge/-gabriel.al.rio@gmail.com-black?style=flat-square&logo=Gmail&logoColor=white&link=mailto:gabriel.al.rio@gmail.com)](mailto:gabriel.al.rio@gmail.com)
 
 ---
